@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 65.5%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 1.8rem;
+}
+
+main {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+main .container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    grid-template-areas:
+    "header1 header1 header2 header2 header2 header3 header4 header4 header4 header5 header6 header6"
+    "main1 main2 main2 main2 main3 main3 main4 main5 main5 main5 main6 main6" 
+    "said1 said2 said2 said3 said3 said3 said4 said4 said5 said5 said6 said6"
+    "leg1 leg2 leg2 leg2 leg3 leg3 leg4 leg5 leg5 leg5 leg6 leg6"
+    "finger1 finger1 finger2 finger2 finger2 finger3 finger4 finger4 finger4 finger5 finger6 finger6"
+    ;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 220px;
+}
+
+main .container div{
+    display: flex;
+    place-content: center;
+}
+
+main .container div a{
+    font-size: 1.8rem;
+    margin: 5px;
+    text-decoration: none;
+    color: #3366cf;
+    font-weight: bold;
+}
+
+main .container div p{
+    font-size: 1.4rem;
+}
+
+main .container .item1 {
+    grid-area: header2;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item2 {
+    grid-area: main2;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item3 {
+    grid-area: said2;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item4 {
+    grid-area: leg2;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item5 {
+    grid-area: finger2;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item6 {
+    grid-area: header4;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item7 {
+    grid-area: main5;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item8 {
+    grid-area: said5;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item9 {
+    grid-area: leg5;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main .container .item10 {
+    grid-area: finger4;
+    align-items: center;
+    flex-direction: column; 
+}
+
+section .main-button__serch {
+    display: flex;
+}
+
+main .main-button {
+    width: 500px;
+    height: 50px;
+    border: 1px solid rgb(129, 116, 116);
+    margin-top: 30px;
+}
+
+section .main-button__serch .main-button__secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div .main-button__first-input {
+    width: 88%;
+    height: 48px;
+    border: none;
+}
+
+section div .main-button__secondary {
+    background-color: white;
+    border: none;
+    color: rgb(94, 81, 81);
+}
+
+section div .main-button__secondary p {
+    margin-right: 3px;
+}
+
+section .main-button__serch img {
+    width: 10px;
+    margin-right: 20px;
+}
+
+section div .main-button__secondary-input {
+    width: 12%;
+    border: none;
+    background-color: #36c;
+    border-color: #36c;
+    background-image: url('../img/icons/lupa.png');
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+
+section .main-button__list-serch button {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 350px;
+    height: 40px;
+    background-color: #f8f9fa;
+}
+
+section div button .main-button__list-serch-china {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url('..//img/icons/letras\ chinas.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+section div .main-button__list-serch___wikipedia p {
+    color: #36c;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+section div button .main-button__list-serch-arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/icons/arrow-down-blue.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 2px solid #c8ccd1;
+}
+
+footer .footer-section {
+    margin-top: 30px;   
+}
+
+footer section .footer-section__container {
+    display: grid;
+    grid-template-columns: 40% 80%;
+}
+
+footer section .footer-section__container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer section .footer__aside-first {
+    display: flex;
+    width: 370px;
+    margin: 20px;
+}
+
+footer section .footer__aside-first p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2px;
+    color: #54595d;
+}
+
+footer section .footer__aside-first a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #36c;
+}
+
+footer section .footer__aside-first img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+footer section .footer__aside-second {
+    display: flex;
+    width: 385px;
+    height: 180px;
+    margin: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;   
+}
+
+footer section .footer__aside-second img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+footer section .footer__aside-second a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #36c;
+    font-weight: bold;
+}
+
+footer section .footer__aside-second p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2px;
+    color: #54595d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer section .footer__aside-second {
+    display: flex;
+}
+
+footer section .footer__aside-second img {
+    width: 40px;
+    height: 40px;
+}
+
+footer section .footer__aside-second-downland {
+    align-items: center;
+    justify-content: center;
+}
+
+footer section .footer__aside-second-downland img {
+    width: 120px;
+    height: 40px;
+}
+
+footer section .footer__list-logos {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-auto-flow: column;
+    gap: 0 120px;
+    margin-bottom: 40px;
+}
+
+
+footer section div .footer__list-logos-commons {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-commons span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-commons p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-commons img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-books {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-books span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-books p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-books img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-university {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-university span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-university p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-university img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-source {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-source span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-source p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-source img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-voyage {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-voyage span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-voyage p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-voyage img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-news {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-news span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-news p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-news img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-quote {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-quote span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-quote p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-quote img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-species {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-species span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-species p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-species img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-wiktionario {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-wiktionario span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-wiktionario p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-wiktionario img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-data {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+footer section div .footer__list-logos-data span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-data p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-data img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-media {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 60px;
+}
+
+footer section div .footer__list-logos-media span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-media p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-media img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer section div .footer__list-logos-meta {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 60px;
+}
+
+footer section div .footer__list-logos-meta span {
+    font-size: 1.5rem;
+    color: #36c;
+}
+
+footer section div .footer__list-logos-meta p {
+    font-size: 1.5rem;
+    margin-top: 2px;
+    color: #54595d;
+}
+
+footer section div .footer__list-logos-meta img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+footer .footer-section-second {
+    border-top: 2px solid #c8ccd1;
+}
+
+footer section .footer-section-second-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+footer section .footer-section-second-container p {
+    font-size: 1.6rem;
+    color: #54595d;
+}
+
+footer section .footer-section-second-container a {
+    font-size: 1.6rem;
+    margin: 5px;
+    text-decoration: none;
+    color: #36c;
+}
+
+footer section .footer-section-second-container div a:before {
+    content: "• ";
+}
+
+
+
+
+
+
+
+
+
+
+
